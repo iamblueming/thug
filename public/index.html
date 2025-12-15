@@ -6,19 +6,33 @@
 
   <title>The Hate U Give | whats next?</title>
 
+  <!-- Roboto Slab -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
-
-  <!-- Phosphor Icons (Web) -->
+  <!-- Phosphor Icons -->
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
   <link rel="stylesheet" href="css.css" />
 </head>
 
 <body>
-  <!-- Background layer (transcript-style fragments) -->
+  <!-- Mobile notice (shown only on mobile; dismissible) -->
+  <div class="notice" id="mobileNotice" role="status" aria-live="polite">
+    <div class="notice__inner">
+      <i class="ph ph-desktop" aria-hidden="true"></i>
+      <div class="notice__text">
+        <strong>Desktop recommended!uwu</strong>
+        <span>This site is designed for horizontal desktop screen...!</span>
+      </div>
+      <button class="notice__btn" id="noticeClose" type="button" aria-label="Dismiss">
+        <i class="ph ph-x" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Background layer (spilled text fragments) -->
   <div class="bg" aria-hidden="true">
     <div class="bg__noise"></div>
     <div class="bg__text" id="bgText"></div>
@@ -27,13 +41,11 @@
   <main class="shell">
     <header class="hero">
       <h1 class="title">The Hate U Give</h1>
-      <p class="subtitle">
-        An interactive film reflection on identity, voice, and justice.
-      </p>
+      <p class="subtitle">An interactive film reflection on identity, voice, and justice.</p>
     </header>
 
+    <!-- 4×3 Tiles -->
     <section class="grid" aria-label="Reflection tiles">
-      <!-- 12 tiles: 4 x 3 -->
       <button class="card" data-key="snapshot">
         <div class="card__icon"><i class="ph ph-film-strip" aria-hidden="true"></i></div>
         <div class="card__meta">
@@ -131,9 +143,141 @@
       </button>
     </section>
 
+    <!-- SECTION 2: Editable template (sticky note style) -->
+    <section class="section" aria-label="Editable template">
+      <div class="section__head">
+        <h2 class="section__title">My Reflection Template</h2>
+        <p class="section__sub">Click and type directly. Keep it short, clear, and evidence-based.</p>
+      </div>
+
+      <div class="template">
+        <article class="panel">
+          <div class="panel__top">
+            <i class="ph ph-text-aa" aria-hidden="true"></i>
+            <h3>Title</h3>
+          </div>
+          <div class="editable" contenteditable="true" spellcheck="true">
+            Write your own title here (example: “Voice Has a Cost”).
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel__top">
+            <i class="ph ph-subtitles" aria-hidden="true"></i>
+            <h3>Subtitle</h3>
+          </div>
+          <div class="editable" contenteditable="true" spellcheck="true">
+            One sentence: what your site is trying to communicate to your audience.
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel__top">
+            <i class="ph ph-quotes" aria-hidden="true"></i>
+            <h3>Main Paragraph</h3>
+          </div>
+          <div class="editable editable--tall" contenteditable="true" spellcheck="true">
+            Write 5–8 sentences. Include: a claim, a film moment (paraphrase), and why it matters.
+          </div>
+        </article>
+
+        <aside class="sticky">
+          <div class="sticky__top">
+            <i class="ph ph-note-pencil" aria-hidden="true"></i>
+            <h3>Sticky Note</h3>
+          </div>
+          <div class="sticky__body editable editable--tall" contenteditable="true" spellcheck="true">
+            Quick notes:
+            - key quote idea (paraphrase)
+            - theme link
+            - technique you noticed
+            - one reflection question
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Tupac infographic -->
+    <section class="section" aria-label="Tupac Shakur infographic">
+      <div class="section__head">
+        <h2 class="section__title">Why Tupac Matters Here</h2>
+        <p class="section__sub">A quick infographic-style overview and the connection to the film’s message.</p>
+      </div>
+
+      <div class="tupac">
+        <div class="tupac__frame">
+          <!-- Replace src with your image link -->
+          <img
+            src="https://via.placeholder.com/900x1100.png?text=Add+Tupac+Image+Link"
+            alt="Tupac Shakur"
+            class="tupac__img"
+          />
+          <div class="tupac__caption">
+            <span class="chip"><i class="ph ph-microphone-stage" aria-hidden="true"></i> Rapper</span>
+            <span class="chip"><i class="ph ph-pen-nib" aria-hidden="true"></i> Poet</span>
+            <span class="chip"><i class="ph ph-film-slate" aria-hidden="true"></i> Actor</span>
+          </div>
+        </div>
+
+        <div class="tupac__info">
+          <article class="panel">
+            <div class="panel__top">
+              <i class="ph ph-user" aria-hidden="true"></i>
+              <h3>Who he was</h3>
+            </div>
+            <p>
+              Tupac Shakur (1971–1996) was an American rapper and actor known for music that spoke about
+              poverty, racism, police violence, and survival. He became one of the most influential voices
+              in hip-hop because he turned social pain into lyrics people could not ignore.
+            </p>
+          </article>
+
+          <article class="panel">
+            <div class="panel__top">
+              <i class="ph ph-lightbulb" aria-hidden="true"></i>
+              <h3>Core ideas in his work</h3>
+            </div>
+            <ul class="panel__list">
+              <li>Speaking honestly about injustice and trauma</li>
+              <li>Community pride alongside criticism of systems</li>
+              <li>Anger as a reaction to being unheard</li>
+              <li>Hope + responsibility: “what we pass on” matters</li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <div class="panel__top">
+              <i class="ph ph-link" aria-hidden="true"></i>
+              <h3>Connection to the film</h3>
+            </div>
+            <p>
+              The film’s message is similar: when pain is ignored, it spreads. Starr’s story shows how one event
+              is never “only one event”—it affects families, schools, communities, and what people believe is normal.
+            </p>
+          </article>
+
+          <div class="timeline">
+            <div class="timeline__item"><span class="timeline__year">1971</span><span class="timeline__text">Born in New York City</span></div>
+            <div class="timeline__item"><span class="timeline__year">1990s</span><span class="timeline__text">Music and acting rise; major cultural impact</span></div>
+            <div class="timeline__item"><span class="timeline__year">1996</span><span class="timeline__text">Died at age 25; influence continues</span></div>
+          </div>
+
+          <article class="panel">
+            <div class="panel__top">
+              <i class="ph ph-question" aria-hidden="true"></i>
+              <h3>Reflection question</h3>
+            </div>
+            <p class="strong">
+              If a society treats some voices as “dangerous,” who benefits from that silence?
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
-      <p>David Sim (C) 2025 | A personal project because school said to do it.</p>
-      <p class="footer__fine">Background text is original “transcript-style” paraphrase inspired by the film.</p>
+      <p>David Sim (C) 2025 | A personal project because school said to do it</p>
+      <p class="footer__fine">Background text is original “transcript-style” paraphrase inspired by the film "The Hate U Give (2018)"</p>
     </footer>
   </main>
 

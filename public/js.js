@@ -10,43 +10,39 @@ const tiles = {
     ],
     question: "What details decide whether people see someone as human—or as a headline?"
   },
-
   twoWorlds: {
     title: "Two Worlds",
     icon: "ph-split-vertical",
     hint: "Identity, code-switching, and the cost of fitting in.",
     body: [
-      "Starr learns that language, tone, and even facial expression can be survival skills. In one place she minimizes herself to avoid being judged; in another place she stays alert to avoid being targeted.",
-      "The film shows code-switching as more than “acting different.” It is constant decision-making: which words are safe, which reactions will be misunderstood, and which parts of your life must be hidden.",
+      "Starr learns that language, tone, and even expression can become survival skills. In one place she minimizes herself to avoid being judged; in another place she stays alert to avoid being targeted.",
+      "The film shows code-switching as constant decision-making: which words are safe, which reactions will be misunderstood, and which parts of your life must be hidden.",
       "Over time, that split can feel like losing pieces of yourself. The film asks whether belonging should require shrinking."
     ],
     question: "Where do you feel most like yourself—and what changes when you enter a different space?"
   },
-
   theStop: {
     title: "The Stop",
     icon: "ph-hand-palm",
     hint: "A turning point shaped by power and fear.",
     body: [
-      "A single moment reveals how uneven power can be. The scene is tense because it is not just about the rules—it's about who is treated as a threat before they do anything.",
-      "The film emphasizes how quickly ordinary actions are reinterpreted when fear and authority combine. Afterward, the community is left to carry grief while outsiders debate “what should have happened.”",
-      "The scene matters because it forces the audience to sit with uncertainty, panic, and consequences—not just opinions."
+      "A single moment reveals how uneven power can be. The scene is tense because it is not just about rules—it's about who is treated as a threat before they do anything.",
+      "The film emphasizes how quickly ordinary actions are reinterpreted when fear and authority combine. Afterward, the community carries grief while outsiders debate “what should have happened.”",
+      "The scene matters because it forces the audience to sit with panic and consequences—not just opinions."
     ],
-    question: "Why do people argue about “what they should have done” instead of asking why the situation was unsafe in the first place?"
+    question: "Why do people argue about “what they should have done” instead of asking why the situation was unsafe?"
   },
-
   family: {
     title: "Family",
     icon: "ph-house",
     hint: "Protection, conflict, and love under pressure.",
     body: [
       "Starr’s family is not perfect, but it is a place where values are taught directly—through rules, stories, and hard conversations.",
-      "The film shows parenting as strategy: how to keep a child safe without taking away their future. It also shows disagreement inside love—different beliefs about risk, speaking up, and what “strength” looks like.",
+      "The film shows parenting as strategy: how to keep a child safe without taking away their future. It also shows disagreement inside love—different beliefs about risk, speaking up, and what strength looks like.",
       "Family becomes a shelter, but also a mirror: it reflects what is at stake if the outside world refuses to change."
     ],
     question: "When does protection become control—and how can families balance both?"
   },
-
   labels: {
     title: "Labels",
     icon: "ph-tag",
@@ -58,122 +54,156 @@ const tiles = {
     ],
     question: "What labels do people use to avoid empathy—and how do those labels get repeated?"
   },
-
   media: {
     title: "Media Story",
     icon: "ph-newspaper",
     hint: "What gets amplified, edited, or ignored.",
     body: [
       "The film highlights how narratives are built: a clip, a quote, a photo—then a conclusion. Once a storyline spreads, it becomes difficult to correct, even with facts.",
-      "Certain voices are treated as “neutral” and others as “biased.” But the choices behind the coverage are never neutral: what is shown first, what words are used, whose emotions are trusted.",
+      "Certain voices are treated as “neutral” and others as “biased.” But the choices behind coverage are not neutral: what is shown first, what words are used, whose emotions are trusted.",
       "The result is pressure on witnesses and families to perform grief in a way the public approves."
     ],
     question: "How does media framing change what people believe is “the truth”?"
   },
-
   silenceVoice: {
     title: "Silence vs Voice",
     icon: "ph-megaphone",
     hint: "The risks of speaking, and the risks of staying quiet.",
     body: [
-      "Staying silent can feel safer at first. Speaking up can bring attention, backlash, and isolation. The film makes that choice feel real—because it shows consequences on relationships and daily life.",
+      "Staying silent can feel safer at first. Speaking up can bring attention, backlash, and isolation. The film makes that choice feel real by showing consequences on relationships and daily life.",
       "But silence also has a cost: it can turn pain into a private burden and allow false stories to harden into “facts.”",
-      "The film frames voice as a form of responsibility—not because it is easy, but because it is necessary."
+      "The film frames voice as responsibility—not because it is easy, but because it is necessary."
     ],
     question: "What makes someone finally decide, “I can’t stay quiet anymore”?"
   },
-
   community: {
     title: "Community",
     icon: "ph-users-three",
-    hint: "Grief, anger, unity, and difficult choices.",
+    hint: "Grief, protest, unity, and difficult choices.",
     body: [
-      "The community response is shown as layered: sadness, frustration, fear, and solidarity. The film does not reduce protest to one emotion or one outcome.",
-      "It also shows how tension grows when people feel ignored. When systems do not respond, the community finds other ways to be heard—some constructive, some chaotic.",
-      "At its best, the community becomes a reminder: people are not alone, and pain is shared."
+      "The community response is layered: sadness, frustration, fear, and solidarity. The film does not reduce protest to one emotion or one outcome.",
+      "It also shows how tension grows when people feel ignored. When systems do not respond, the community finds other ways to be heard.",
+      "At its best, community becomes a reminder: people are not alone, and pain is shared."
     ],
     question: "How do communities turn grief into action without losing each other in the process?"
   },
-
   allyship: {
     title: "Allyship",
     icon: "ph-handshake",
     hint: "Support that costs something vs support that is convenient.",
     body: [
-      "The film contrasts different reactions from peers: some listen and learn; others defend their comfort and call it “being honest.”",
-      "Allyship is shown as behavior, not identity. It includes asking better questions, staying present when it’s uncomfortable, and not making someone else’s trauma into a debate topic.",
-      "The story suggests that real support involves risk—social risk, emotional risk, and the willingness to change."
+      "The film contrasts different reactions from peers: some listen and learn; others defend comfort and call it “being honest.”",
+      "Allyship is shown as behavior, not identity. It includes asking better questions, staying present when it’s uncomfortable, and not turning someone else’s pain into a debate topic.",
+      "Real support involves risk—the willingness to change."
     ],
     question: "How can someone prove support through actions rather than words?"
   },
-
   system: {
     title: "System",
     icon: "ph-scales",
     hint: "Institutions, rules, and uneven consequences.",
     body: [
       "The film points to a pattern: when power is concentrated, accountability can become optional. Procedures may exist, but outcomes can still be unequal.",
-      "It also shows how systems protect themselves—through delays, technical language, and shifting blame onto individuals rather than structures.",
-      "This section is about the difference between what is legal and what is just—and why that gap matters."
+      "It also shows how systems protect themselves—through delays, technical language, and shifting blame away from structures.",
+      "This section is about the gap between what is legal and what is just."
     ],
-    question: "What is one ‘rule’ in society that seems neutral but creates unequal results?"
+    question: "What is one ‘rule’ that seems neutral but creates unequal results?"
   },
-
   filmCraft: {
     title: "Film Craft",
     icon: "ph-camera",
     hint: "How the movie constructs meaning through visuals and sound.",
     body: [
       "Beyond the plot, the film uses craft to guide emotion: close shots to trap the viewer in tension, wider shots to show isolation, and pacing to build pressure.",
-      "Sound design matters too—silences, sudden noise, and music choices can make a moment feel unsafe or fragile. Color and lighting also create contrast between spaces and identities.",
+      "Sound design matters too—silences and sudden noise can make a moment feel unsafe. Color and lighting create contrast between spaces and identities.",
       "Looking at craft helps you explain meaning without only summarizing events."
     ],
     question: "Which camera or sound choice affected you most, and what did it make you feel?"
   },
-
   whatNow: {
     title: "What Now?",
     icon: "ph-compass",
     hint: "Turning reflection into realistic, teen-friendly action.",
     body: [
-      "A film can start a conversation, but change requires choices after the credits. For teens, action can be small and still meaningful: learning, listening, challenging stereotypes, and supporting people who speak up.",
-      "It can also mean checking sources, refusing to spread rumors, and noticing whose voices get ignored. It is not about being perfect—it is about being responsible.",
-      "The goal is not guilt. The goal is awareness that becomes consistent behavior."
+      "A film can start a conversation, but change requires choices after the credits. For teens, action can be small and still meaningful: learn, listen, challenge stereotypes, and support people who speak up.",
+      "It can also mean checking sources, refusing to spread rumors, and noticing whose voices get ignored.",
+      "The goal is awareness that becomes consistent behavior."
     ],
     question: "What is one action you can take this week that matches the values you believe in?"
   }
 };
 
-/* Background text generator (short original fragments, no long quotes) */
+/* Spilled background text fragments */
 const bgFragments = [
-  "I learned to measure my words.",
-  "Two places, two versions of me.",
-  "They asked for a story that felt simple.",
-  "Silence can look like safety—until it isn’t.",
-  "A name became a headline.",
+  "I learned to measure my words",
+  "Two places asked for two versions of me",
+  "They wanted a simple story. The truth wasn’t simple",
+  "Silence can look like safety—until it isn’t",
+  "A name can become a headline overnight",
   "Who gets believed first?",
-  "Grief is real. So is anger.",
-  "Justice isn’t only a verdict.",
-  "A community is more than a stereotype.",
-  "Voice costs something.",
-  "A camera can frame a person—or reduce them.",
-  "I wanted to be invisible. I couldn’t."
+  "Grief is real. So is anger",
+  "Justice isn’t only a verdict",
+  "A community is more than a stereotype",
+  "Voice costs something",
+  "A camera can frame a person—or reduce them",
+  "I wanted to be invisible. I couldn’t",
+  "Being ‘polite’ is not the same as being safe",
+  "When the room watches you, you learn to perform",
+  "Some stories get edited before they are heard",
+  "A label can travel faster than the truth"
 ];
 
-function buildBackground() {
+function rand(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+function buildBackgroundSpill() {
   const el = document.getElementById("bgText");
   if (!el) return;
 
-  // Create a scattered “transcript wall”
-  const lines = [];
-  for (let i = 0; i < 28; i++) {
-    const a = bgFragments[Math.floor(Math.random() * bgFragments.length)];
-    const b = bgFragments[Math.floor(Math.random() * bgFragments.length)];
-    const c = bgFragments[Math.floor(Math.random() * bgFragments.length)];
-    lines.push(`${a}  •  ${b}  •  ${c}`);
-  }
+  el.innerHTML = "";
 
-  el.innerHTML = lines.map(t => `<div class="bg__line">${t}</div>`).join("");
+  const count = 46; // adjust if you want more/less density
+  for (let i = 0; i < count; i++) {
+    const frag = document.createElement("div");
+    frag.className = "bg__frag";
+    frag.textContent = bgFragments[Math.floor(Math.random() * bgFragments.length)];
+
+    // random placement across full viewport
+    const top = rand(4, 96);
+    const left = rand(3, 94);
+
+    // slight rotation
+    const rot = rand(-8, 8);
+
+    // varied opacity per fragment (still subtle)
+    const opacity = rand(0.35, 0.95);
+
+    frag.style.top = `${top}%`;
+    frag.style.left = `${left}%`;
+    frag.style.setProperty("--r", `${rot}deg`);
+    frag.style.opacity = opacity.toFixed(2);
+
+    el.appendChild(frag);
+  }
+}
+
+/* Mobile notice logic */
+function setupMobileNotice() {
+  const notice = document.getElementById("mobileNotice");
+  const closeBtn = document.getElementById("noticeClose");
+  if (!notice || !closeBtn) return;
+
+  const dismissed = localStorage.getItem("hideMobileNotice") === "1";
+  if (dismissed) return;
+
+  const isMobile = window.matchMedia("(max-width: 820px), (pointer: coarse)").matches;
+  if (isMobile) notice.classList.add("is-visible");
+
+  closeBtn.addEventListener("click", () => {
+    notice.classList.remove("is-visible");
+    localStorage.setItem("hideMobileNotice", "1");
+  });
 }
 
 /* Modal logic */
@@ -194,19 +224,14 @@ function openModal(key) {
 
   modalTitle.textContent = data.title;
   modalHint.textContent = data.hint;
-
   modalIcon.innerHTML = `<i class="ph ${data.icon}"></i>`;
-
   modalBody.innerHTML = data.body.map(p => `<p>${p}</p>`).join("");
   modalQuestion.textContent = data.question;
 
   modal.classList.add("is-open");
   modal.setAttribute("aria-hidden", "false");
 
-  // focus close button for accessibility
-  const closeBtn = modal.querySelector(".modal__close");
-  closeBtn?.focus();
-
+  modal.querySelector(".modal__close")?.focus();
   document.body.style.overflow = "hidden";
 }
 
@@ -226,15 +251,19 @@ document.querySelectorAll(".card").forEach(btn => {
 
 modal.addEventListener("click", (e) => {
   const target = e.target;
-  if (target && target.dataset && target.dataset.close === "true") {
-    closeModal();
-  }
+  if (target && target.dataset && target.dataset.close === "true") closeModal();
 });
 
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && modal.classList.contains("is-open")) {
-    closeModal();
-  }
+  if (e.key === "Escape" && modal.classList.contains("is-open")) closeModal();
 });
 
-buildBackground();
+/* init */
+setupMobileNotice();
+buildBackgroundSpill();
+
+/* optional: rebuild background on resize (keeps it dynamic) */
+window.addEventListener("resize", () => {
+  // only rebuild if there is a real width change
+  buildBackgroundSpill();
+});
