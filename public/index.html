@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The Hate U Give | Interactive Reflection</title>
+
+  <!-- Google Font (PLACEHOLDER)
+       Replace this link with the exact embed link from fonts.google.com selection page.
+       Keep weights 400/600/800/900 if your font supports them. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Phosphor Icons (Web) -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <link rel="stylesheet" href="css.css" />
+</head>
+
+<body>
+  <!-- Background layer (transcript-style fragments) -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__noise"></div>
+    <div class="bg__text" id="bgText"></div>
+  </div>
+
+  <main class="shell">
+    <header class="hero">
+      <h1 class="title">The Hate U Give</h1>
+      <p class="subtitle">
+        An interactive film reflection on identity, voice, and justice.
+      </p>
+    </header>
+
+    <section class="grid" aria-label="Reflection tiles">
+      <!-- 12 tiles: 4 x 3 -->
+      <button class="card" data-key="snapshot">
+        <div class="card__icon"><i class="ph ph-film-strip" aria-hidden="true"></i></div>
+        <div class="card__meta">
+          <h2 class="card__title">Snapshot</h2>
+          <p class="card__teaser">A clean overview of the turning point and stakes.</p>
+        </div>
+      </button>
+
+      <button class="card" data-key="twoWorlds">
+        <div class="card__icon"><i class="ph ph-split-vertical" aria-hidden="true"></i></div>
+        <div class="card__meta">
+          <h2 class="card__title">Two Worlds</h2>
+          <p class="card__teaser">Code-switching, identity, and survival.</p>
+        </div>
+      </button>
+
+      <button class="card" data-key="theStop">
+        <div class="card__icon"><i class="ph ph-hand-palm" aria-hidden="true"></i></div>
+        <div class="card__meta">
+          <h2 class="card__title">The Stop</h2>
+          <p class="card__teaser">Power, fear, and the moment everything changes.</p>
+        </div>
+      </button>
+
+      <button class="card" data-key="family">
+        <div class="card__icon"><i class="ph ph-house" aria-hidden="true"></i></div>
+        <div class="card__meta">
+          <h2 class="card__title">Family</h2>
+          <p class="card__teaser">Protection, conflict, and love under pressure.</p>
+        </div>
+      </button>
+
+      <button class="card" data-key="labels">
+        <div class="card__icon"><i class="ph ph-tag" aria-hidden="true"></i></div>
+        <div class="card__meta">
+          <h2 class="card__title">Labels</h2>
+          <p class="card__teaser">How people get reduced to headlines.</p>
+        </div>
+      </button>
+
+      <button class="card" data-key="media">
+        <div class="card__icon"><i class="ph ph-newspaper" aria-hidden="true"></i></div>
+        <div class="card__meta">
+          <h2 class="card__title">Media Story</h2>
+          <p class="card__teaser">What gets shown, what gets cut, what gets believed.</p>
+        </div>
+      </button>
+
+      <button class="card" data-key="silenceVoice">
+        <div class="card__icon"><i class="ph ph-megaphone" aria-hidden="true"></i></div>
+        <div class="card__meta">
+          <h2 class="card__title">Silence vs Voice</h2>
+          <p class="card__teaser">The cost of speaking—and of not speaking.</p>
+        </div>
+      </button>
+
+      <button class="card" data-key="community">
+        <div class="card__icon"><i class="ph ph-users-three" aria-hidden="true"></i></div>
+        <div class="card__meta">
+          <h2 class="card__title">Community</h2>
+          <p class="card__teaser">Grief, protest, and collective choices.</p>
+        </div>
+      </button>
+
+      <button class="card" data-key="allyship">
+        <div class="card__icon"><i class="ph ph-handshake" aria-hidden="true"></i></div>
+        <div class="card__meta">
+          <h2 class="card__title">Allyship</h2>
+          <p class="card__teaser">When support is real—and when it’s performance.</p>
+        </div>
+      </button>
+
+      <button class="card" data-key="system">
+        <div class="card__icon"><i class="ph ph-scales" aria-hidden="true"></i></div>
+        <div class="card__meta">
+          <h2 class="card__title">System</h2>
+          <p class="card__teaser">Rules, institutions, and uneven consequences.</p>
+        </div>
+      </button>
+
+      <button class="card" data-key="filmCraft">
+        <div class="card__icon"><i class="ph ph-camera" aria-hidden="true"></i></div>
+        <div class="card__meta">
+          <h2 class="card__title">Film Craft</h2>
+          <p class="card__teaser">How visuals and sound construct meaning.</p>
+        </div>
+      </button>
+
+      <button class="card" data-key="whatNow">
+        <div class="card__icon"><i class="ph ph-compass" aria-hidden="true"></i></div>
+        <div class="card__meta">
+          <h2 class="card__title">What Now?</h2>
+          <p class="card__teaser">Practical reflection steps for teens.</p>
+        </div>
+      </button>
+    </section>
+
+    <footer class="footer">
+      <p>David Sim (C) 2025 | A personal project because school said to do it.</p>
+      <p class="footer__fine">Background text is original “transcript-style” paraphrase inspired by the film.</p>
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__overlay" data-close="true"></div>
+
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" type="button" aria-label="Close" data-close="true">
+        <i class="ph ph-x" aria-hidden="true"></i>
+      </button>
+
+      <div class="modal__header">
+        <div class="modal__icon" id="modalIcon" aria-hidden="true"></div>
+        <div>
+          <h2 class="modal__title" id="modalTitle"></h2>
+          <p class="modal__hint" id="modalHint"></p>
+        </div>
+      </div>
+
+      <div class="modal__body" id="modalBody"></div>
+
+      <div class="modal__footer">
+        <span class="modal__tag">Reflection</span>
+        <p class="modal__question" id="modalQuestion"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
