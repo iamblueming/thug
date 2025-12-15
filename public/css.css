@@ -17,7 +17,7 @@
 html, body{ height: 100%; }
 body{
   margin: 0;
-  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: "Roboto Slab", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
   background: radial-gradient(1200px 700px at 30% 20%, #3a0010 0%, var(--bg1) 45%, var(--bg0) 100%);
   overflow-x: hidden;
@@ -36,19 +36,29 @@ body{
   display: grid;
   grid-auto-rows: min-content;
   gap: 22px;
-  opacity: 0.12;
-  filter: blur(1.6px);
+
+  /* increased visibility but still subtle */
+  opacity: 0.22;
+  filter: blur(1.35px);
   transform: scale(1.03);
+
   pointer-events: none;
 }
+
 .bg__line{
   font-size: clamp(14px, 1.5vw, 22px);
   line-height: 1.35;
   letter-spacing: 0.02em;
-  color: rgba(255, 245, 245, 0.75);
-  text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+
+  /* brighter + a touch of shadow so it’s barely readable */
+  color: rgba(255, 245, 245, 0.88);
+  text-shadow:
+    0 1px 0 rgba(0,0,0,0.55),
+    0 10px 30px rgba(0,0,0,0.35);
+
   white-space: pre-wrap;
 }
+
 .bg__noise{
   position: absolute;
   inset: 0;
