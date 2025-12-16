@@ -145,55 +145,60 @@
 
     <!-- SECTION 2: Editable template (sticky note style) -->
     <section class="section" aria-label="Editable template">
-      <div class="section__head section__head--left">
-        <h2 class="section__title">My Reflection Template</h2>
-        <p class="section__sub">Click and type directly. Keep it short, clear, and evidence-based.</p>
+      <div class="section__head">
+        <h2 class="section__title">Section 2</h2>
+        <p class="section__sub">will be replacing this text</p>
       </div>
 
       <div class="template">
-        <div class="prose">
-          <blockquote class="quote editable" contenteditable="true" spellcheck="true">
-            Write your own title here (example: “Voice Has a Cost”).
-          </blockquote>
-
-          <blockquote class="quote editable" contenteditable="true" spellcheck="true">
-            One-sentence subtitle: what message are you communicating, and to who?
-          </blockquote>
-
-          <div class="callout editable" contenteditable="true" spellcheck="true">
-            <i class="ph ph-pencil" aria-hidden="true"></i>
-            <strong>Sticky idea:</strong> “This is what I thought…” (type your strongest takeaway here)
+        <article class="panel">
+          <div class="panel__top">
+            <i class="ph ph-text-aa" aria-hidden="true"></i>
+            <h3>Title</h3>
           </div>
+          <div class="editable" contenteditable="true" spellcheck="true">
+            Will be replaced 22
+          </div>
+        </article>
 
-          <blockquote class="quote editable" contenteditable="true" spellcheck="true">
-            Main paragraph (5–8 sentences): claim + film moment (paraphrase) + why it matters.
-          </blockquote>
+        <article class="panel">
+          <div class="panel__top">
+            <i class="ph ph-subtitles" aria-hidden="true"></i>
+            <h3>subtitle goes here</h3>
+          </div>
+          <div class="editable" contenteditable="true" spellcheck="true">
+            will be replaced 333
+          </div>
+        </article>
 
-          <blockquote class="quote editable" contenteditable="true" spellcheck="true">
-            Reflection question: What should the audience think about after reading your site?
-          </blockquote>
-        </div>
+        <article class="panel">
+          <div class="panel__top">
+            <i class="ph ph-quotes" aria-hidden="true"></i>
+            <h3>subtitle goes here 22</h3>
+          </div>
+          <div class="editable editable--tall" contenteditable="true" spellcheck="true">
+            will be replaced 4444
+          </div>
+        </article>
 
         <aside class="sticky">
           <div class="sticky__top">
             <i class="ph ph-note-pencil" aria-hidden="true"></i>
-            <h3>Notes</h3>
+            <h3>Sticky Note</h3>
           </div>
           <div class="sticky__body editable editable--tall" contenteditable="true" spellcheck="true">
-            Quick notes:
+            sticy note template
             - theme link
-            - technique you noticed
-            - key moment (paraphrase)
-            - one sentence conclusion
+            - idk
+            - what
           </div>
         </aside>
       </div>
     </section>
 
-
     <!-- SECTION 3: Tupac infographic -->
     <section class="section" aria-label="Tupac Shakur infographic">
-      <div class="section__head section__head--right">
+      <div class="section__head">
         <h2 class="section__title">Why Tupac Matters Here</h2>
         <p class="section__sub">A quick infographic-style overview and the connection to the film’s message.</p>
       </div>
@@ -201,8 +206,11 @@
       <div class="tupac">
         <div class="tupac__frame">
           <!-- Replace src with your image link -->
-          <img src="https://blackpast.org/wp-content/uploads/2024/08/Tupac_Amaru_Shakur_MTV_promotional_photo_by_Albert_Watson.jpg" class="tupac__img"/>
-
+          <img
+            src="https://via.placeholder.com/900x1100.png?text=Add+Tupac+Image+Link"
+            alt="Tupac Shakur"
+            class="tupac__img"
+          />
           <div class="tupac__caption">
             <span class="chip"><i class="ph ph-microphone-stage" aria-hidden="true"></i> Rapper</span>
             <span class="chip"><i class="ph ph-pen-nib" aria-hidden="true"></i> Poet</span>
@@ -211,32 +219,48 @@
         </div>
 
         <div class="tupac__info">
-          <div class="prose">
-            <blockquote class="quote">
-              <strong>Who he was:</strong> Tupac Shakur (1971–1996) was an American rapper and actor whose work often addressed
-              racism, poverty, police violence, and survival. His influence comes from turning social pain into art that people
-              could not ignore.
-            </blockquote>
+          <article class="panel">
+            <div class="panel__top">
+              <i class="ph ph-user" aria-hidden="true"></i>
+              <h3>Who he was</h3>
+            </div>
+            <p>
+              Tupac Shakur (1971–1996) was an American rapper and actor known for music that spoke about
+              poverty, racism, police violence, and survival. He became one of the most influential voices
+              in hip-hop because he turned social pain into lyrics people could not ignore.
+            </p>
+          </article>
 
-            <blockquote class="quote">
-              <strong>Core ideas:</strong> Speaking honestly about injustice, showing community pride while criticizing systems,
-              and highlighting how being unheard can turn pain into anger.
-            </blockquote>
+          <article class="panel">
+            <div class="panel__top">
+              <i class="ph ph-lightbulb" aria-hidden="true"></i>
+              <h3>Core ideas in his work</h3>
+            </div>
+            <ul class="panel__list">
+              <li>Speaking honestly about injustice and trauma</li>
+              <li>Community pride alongside criticism of systems</li>
+              <li>Anger as a reaction to being unheard</li>
+              <li>Hope + responsibility: “what we pass on” matters</li>
+            </ul>
+          </article>
 
-            <blockquote class="quote">
-              <strong>Connection to the film:</strong> The film suggests the same pattern—when pain is ignored, it spreads.
-              Starr’s story shows how one event can reshape identity, relationships, and what a community is forced to carry.
-            </blockquote>
-          </div>
+          <article class="panel">
+            <div class="panel__top">
+              <i class="ph ph-link" aria-hidden="true"></i>
+              <h3>Connection to the film</h3>
+            </div>
+            <p>
+              The film’s message is similar: when pain is ignored, it spreads. Starr’s story shows how one event
+              is never “only one event”—it affects families, schools, communities, and what people believe is normal.
+            </p>
+          </article>
 
-          <!-- Keep timeline as glass box -->
           <div class="timeline">
             <div class="timeline__item"><span class="timeline__year">1971</span><span class="timeline__text">Born in New York City</span></div>
             <div class="timeline__item"><span class="timeline__year">1990s</span><span class="timeline__text">Music and acting rise; major cultural impact</span></div>
             <div class="timeline__item"><span class="timeline__year">1996</span><span class="timeline__text">Died at age 25; influence continues</span></div>
           </div>
 
-          <!-- Keep reflection question as a glass box -->
           <article class="panel">
             <div class="panel__top">
               <i class="ph ph-question" aria-hidden="true"></i>
@@ -247,7 +271,8 @@
             </p>
           </article>
         </div>
-
+      </div>
+    </section>
 
     <footer class="footer">
       <p>David Sim (C) 2025 | A personal project because school said to do it</p>

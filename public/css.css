@@ -23,16 +23,9 @@ body{
   margin: 0;
   font-family: "Roboto Slab", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
+  background: radial-gradient(1200px 700px at 30% 20%, #3a0010 0%, var(--bg1) 45%, var(--bg0) 100%);
   overflow-x: hidden;
-
-  /* prevents tiling seams while scrolling */
-  background-color: var(--bg0);
-  background-image: radial-gradient(1200px 700px at 30% 20%, #3a0010 0%, var(--bg1) 45%, var(--bg0) 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
-
 
 /* Mobile notice */
 .notice{
@@ -573,62 +566,4 @@ body{
   margin: 0;
   color: rgba(255,255,255,0.9);
   font-weight: 650;
-}
-
-.section__head--left{ text-align: left; }
-.section__head--right{ text-align: right; }
-
-.section__head--left .section__sub{ margin-left: 0; margin-right: auto; }
-.section__head--right .section__sub{ margin-right: 0; margin-left: auto; }
-
-/* Prose / markdown-ish blocks */
-.prose{
-  display: grid;
-  gap: 12px;
-}
-
-.quote{
-  margin: 0;
-  padding: 10px 14px;
-  border-left: 3px solid rgba(255,255,255,0.26);
-  color: rgba(255,255,255,0.82);
-  line-height: 1.7;
-  background: rgba(0,0,0,0.08);        /* subtle, not “boxed” */
-  border-radius: 12px;
-}
-
-/* Glass callout (like your blue bar idea) */
-.callout{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 14px;
-  border-radius: 18px;
-  border: 1px solid rgba(255,255,255,0.16);
-  background: rgba(80, 140, 255, 0.14);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  box-shadow: 0 14px 40px rgba(0,0,0,0.35);
-}
-
-.callout i{
-  font-size: 18px;
-  color: rgba(140, 190, 255, 0.95);
-}
-
-.callout strong{
-  color: rgba(170, 210, 255, 0.95);
-}
-
-/* Keep editability but make it look clean */
-.editable{
-  border: 0;
-  background: transparent;
-  padding: 0;
-  border-radius: 0;
-}
-.editable:focus{
-  outline: 2px solid rgba(255,255,255,0.18);
-  outline-offset: 6px;
-  border-radius: 12px;
 }
