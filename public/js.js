@@ -267,3 +267,61 @@ window.addEventListener("resize", () => {
   // only rebuild if there is a real width change
   buildBackgroundSpill();
 });
+
+/* ---------------------------
+   AmplitudeJS Player Init
+   --------------------------- */
+
+Amplitude.init({
+  songs: [
+    {
+      name: "Only God Can Judge Me",
+      artist: "2Pac",
+      album: "All Eyez on Me",
+      writer: "Tupac Shakur",
+      url: "./2Pac - Only God Can Judge Me.mp3"
+    },
+    {
+      name: "Keep Ya Head Up",
+      artist: "2Pac",
+      album: "Strictly 4 My N.I.G.G.A.Z...",
+      writer: "Tupac Shakur",
+      url: "./2Pac - Keep Ya Head Up.mp3"
+    }
+  ],
+  volume: 0 // start at 0 for fade-in
+});
+
+// Stop button
+document.getElementById("ampStop")?.addEventListener("click", () => {
+  Amplitude.stop();
+});
+
+// Autoplay + fade-in (tries; may be blocked by browser)
+window.addEventListener("load", async () => {
+  const hint = document.getElementById("ampHint");
+
+  try {
+    // Attempt play
+    Amplitude.play();
+    if (hint) hint.hidden = true;
+
+    // Fade volume to 100% over 5 seconds
+    const durationMs = 5000;
+    const steps = 50;
+    const stepMs = durationMs / steps;
+
+    let step = 0;
+    const timer = setInterval(() => {
+      step++;
+      const v = Math.min(100, Math.round((step / steps) * 100));
+      Amplitude.setVolume(v);
+      if (step >= steps) clearInterval(timer);
+    }, stepMs);
+
+  } catch (e) {
+    // Autoplay blocked
+    if (hint) hint.hidden = false;
+    Amplitude.setVolume(100);
+  }
+});

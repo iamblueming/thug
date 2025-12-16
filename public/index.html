@@ -13,9 +13,12 @@
 
   <!-- Phosphor Icons -->
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://cdn.jsdelivr.net/npm/amplitudejs@5.3.2/dist/amplitude.min.js"></script>
 
   <link rel="stylesheet" href="css.css" />
 </head>
+
+
 
 <body>
   <!-- Mobile notice (shown only on mobile; dismissible) -->
@@ -309,5 +312,57 @@
   </div>
 
   <script src="js.js"></script>
+
+  <!-- Glass Music Player (AmplitudeJS) -->
+<div class="amp" id="ampPlayer" aria-label="Music player">
+  <div class="amp__top">
+    <div class="amp__art" aria-hidden="true">
+      <i class="ph ph-vinyl-record"></i>
+    </div>
+    <div class="amp__meta">
+      <div class="amp__title"><span data-amplitude-song-info="name"></span></div>
+      <div class="amp__sub">
+        <span data-amplitude-song-info="artist"></span>
+        <span class="amp__dot">•</span>
+        <span data-amplitude-song-info="album"></span>
+      </div>
+      <div class="amp__sub2">Writer: <span data-amplitude-song-info="writer"></span></div>
+    </div>
+  </div>
+
+  <div class="amp__controls">
+      <button class="amp__btn" data-amplitude-prev aria-label="Previous">
+        <i class="ph ph-skip-back"></i>
+      </button>
+
+      <button class="amp__btn amp__btn--primary" data-amplitude-play-pause aria-label="Play/Pause">
+        <i class="ph ph-play"></i>
+      </button>
+
+      <button class="amp__btn" data-amplitude-next aria-label="Next">
+        <i class="ph ph-skip-forward"></i>
+      </button>
+
+      <button class="amp__btn" id="ampStop" aria-label="Stop">
+        <i class="ph ph-stop"></i>
+      </button>
+    </div>
+
+    <div class="amp__seek">
+     <span class="amp__time" data-amplitude-current-time>0:00</span>
+     <input class="amp__range" type="range" data-amplitude-song-slider />
+     <span class="amp__time" data-amplitude-duration-time>0:00</span>
+    </div>  
+
+    <div class="amp__vol">
+     <i class="ph ph-speaker-high" aria-hidden="true"></i>
+      <input class="amp__range" type="range" data-amplitude-volume-slider />
+   </div>   
+
+    <div class="amp__hint" id="ampHint" hidden>
+      Autoplay was blocked. Click the play button.
+   </div>
+  </div>
+
 </body>
 </html>
